@@ -1,0 +1,33 @@
+CREATE TABLE users (
+	id int(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    fullname varchar(128) NOT NULL,
+    email varchar(128) NOT NULL,
+    phone varchar(128) NOT NULL,
+    country varchar(128) NOT NULL,
+    address varchar(1280) NOT NULL,
+    regdate varchar(128) NOT NULL 
+)
+
+CREATE TABLE shipments (
+    id int(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    sname varchar(128) NOT NULL,
+    semail varchar(128) NOT NULL,
+    sphone varchar(128) NOT NULL,
+    scountry varchar(128) NOT NULL,
+    saddress varchar(1280) NOT NULL,
+    recName varchar(128) NOT NULL,
+    recEmail varchar(128) NOT NULL,
+    recPhone varchar(128) NOT NULL,
+    recCountry varchar(128) NOT NULL,
+    recAddress varchar(1280) NOT NULL,
+    parcel varchar(128) NOT NULL,
+    departureDate varchar(128) NOT NULL,
+    deliveryDate varchar(128) NOT NULL,
+    shippingLocation varchar(128) NOT NULL,
+    CurrentLocation varchar(128) NOT NULL,
+    parcelWeight varchar(128) NOT NULL,
+    freightType varchar(128) NOT NULL,
+    parcelStatus varchar(128) NOT NULL,
+    amount varchar(128) NOT NULL, 
+    trackingId varchar(128) NOT NULL
+)

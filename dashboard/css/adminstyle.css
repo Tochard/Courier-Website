@@ -1,0 +1,223 @@
+body{
+	font-family: Larsseit, -apple-system, BlinkMacSystemFont, sans-serif;
+	background-color: #f2f2f2;
+	box-sizing: border-box;
+}
+
+.wrapper{
+	background-color: #f2f2f2;
+
+}
+
+.side_bar{
+	background-color: #347fff;
+	width: 200px;
+	padding: 100px 0px;
+	height: 100vh;
+	position: fixed;
+}
+.side_bar ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.side_bar ul li{
+	padding: 15px 10px 15px 20px;
+	/*margin: 2px;*/
+	/*background-color: red;*/
+}
+.side_bar ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+}
+.side_bar ul li:hover{
+	background-color: #D31807;
+}
+.side_bar ul .active{
+	background-color: #fff;
+}
+.side_bar ul .active a{
+	color: #347fff;
+}
+
+.side_bar .logo{
+	padding-left: 20px;
+	height: 50px;
+}
+.side_bar ul .logout{
+	background-color: #D31807;
+}
+.side_bar ul .logout a{
+	color: #fff;
+}
+
+
+.contents{
+	margin-left:  200px;
+}
+.header{
+	background-color: #347fff;
+	height: 80px;
+	border-left: 10px #fff solid;
+}
+.header h1{
+	color: white;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	padding-top: 20px;
+}
+.body-content{
+	padding: 10px 5%;
+}
+
+.b-content{
+	background-color: #fff;
+	box-shadow: rgba(149, 157, 165, 0.3) 0px 0px 10px;
+	border-radius: 10px;
+	padding: 50px;
+	margin-top: 50px;
+}
+.b-heading h2{
+	color: #347fff;
+}
+.b-heading h3{
+	text-align: center;
+	color: #347fff;
+	font-size: 20px;
+}
+
+
+.table{
+	width: 95%;
+	border-collapse: collapse;
+	margin: auto;
+}
+
+.table td,.table th{
+  padding:12px 15px;
+  border:1px solid #ddd;
+  text-align: center;
+  font-size:16px;
+}
+
+.table th{
+	background-color: #347fff;
+	color:#ffffff;
+}
+
+.table tbody tr:nth-child(even){
+	background-color: #f1f1f1;
+}
+
+.delete-btn{
+	background-color: #D31807;
+	color: #fff;
+	border: none;
+	padding: 7px 10px;
+	border-radius: 5px;
+}
+
+/*responsive*/
+@media(max-width: 1080px){
+	.side_bar{
+		display: none;
+	}
+	.contents{
+		margin-left:  0px;
+	}
+}
+
+@media(max-width: 900px){
+	.b-content{
+		padding: 20px 10px;
+	}
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 100%;
+	}
+	.table tr{
+		margin-bottom:15px;
+	}
+	.table td{
+		width: 95%;
+		text-align: right;
+		position: relative;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:15px;
+		font-weight: bold;
+		text-align: left;
+	}
+}
+
+
+
+
+.shipment{
+    margin: auto;
+}
+.shipment label{
+	font-size: 18px;
+	color: #000;
+}
+
+.shipment input{
+    width: 90%;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 3px 20px;
+    outline: none;
+    border: 1px solid #ddd;
+    color: #7c7e84;
+    font-size: 16px;
+    background-color: #f6f6f6;
+}
+.shipment select{
+    width: 94%;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 3px 20px;
+    outline: none;
+    border: 1px solid #ddd;
+    color: #7c7e84;
+    font-size: 16px;
+    background-color: #f6f6f6;
+}
+.shipment textarea{
+    width: 90%;
+    height: 100px;
+    margin-top: 30px;
+    padding: 3px 20px;
+    outline: none;
+    border: 1px solid #ddd;
+    color: #7c7e84;
+    font-size: 16px;
+    background-color: #f6f6f6;
+}
+
+.shipment button{
+    width: 94%;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #347fff;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+
