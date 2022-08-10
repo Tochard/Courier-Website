@@ -24,7 +24,7 @@ require_once "../phpscripts/adminsecurity.php";
 			<div class="navigation">
 				<ul>
 					<a href="admin.php">
-						<li class="active">Dashbord</li>
+						<li>Dashbord</li>
 					</a>
 					<a href="registershipment.php">
 						<li>Register Shipment</li>
@@ -39,7 +39,7 @@ require_once "../phpscripts/adminsecurity.php";
 						<li>Email User</li>
 					</a>
 					<a href="trackshipment.php">
-						<li>Track</li>
+						<li class="active">Track</li>
 					</a>
 					<li class="logout">
 						<form action="../phpscripts/adminlogout.php" method="post">
@@ -51,7 +51,6 @@ require_once "../phpscripts/adminsecurity.php";
 		</div>
 
 		<div class="contents">
-
 			<div class="header">
 
 				<div><button class="menu"><i class="fa fa-bars"></i></button></div>
@@ -104,71 +103,34 @@ require_once "../phpscripts/adminsecurity.php";
 					}
 				})
 			</script>
-
-
 			<div class="body-content">
-
 
 				<div class="b-content">
 					<div class="b-heading">
-						<h2>Registered Users</h2>
+						<h2>Track Shipment</h2>
 
 					</div>
+					<div class="shipment">
 
-					<div class="outer-wrapper">
-						<div class="table-wrapper">
-							<table>
-								<?php
-								include_once "../phpscripts/dbconn.php";
-								$query = "SELECT * FROM users ORDER BY id ASC";
-								$query_run = mysqli_query($conn, $query);
+						<div>
+							<form method="post" action="track.php" class="form">
 
-								?>
+								<div>
+									<div class="inp">
+										<label>Enter Tracking ID:</label>
+										<input type="text" name="tracking_id" placeholder="Tracking ID" required="">
+									</div>
 
-								<thead>
-									<tr>
-										<th>S.No</th>
-										<th>Name</th>
-										<th>Email</th>
-										<th>Phone</th>
-										<th>Country</th>
-										<th>Address</th>
-										<th>SignUp date</th>
-										<th>Action</th>
-									</tr>
-								</thead>
-								<tbody>
-									<?php
-									if (mysqli_num_rows($query_run) > 0) {
-										while ($row = mysqli_fetch_assoc($query_run)) {
-									?>
-											<tr>
-												<td data-label="S.No"><?php echo $row['id'] ?></td>
-												<td data-label="Fullname"><?php echo $row['fullname'] ?></td>
-												<td data-label="Email"><?php echo $row['email'] ?></td>
-												<td data-label="Phone"><?php echo $row['phone'] ?></td>
-												<td data-label="Country"><?php echo $row['country'] ?></td>
-												<td data-label="Address"><?php echo $row['address'] ?></td>
-												<td data-label="Signup Date"><?php echo $row['regdate'] ?></td>
-												<td data-label="Action">
-													<form action="../phpscripts/deleteuser.php" method="post">
-														<input type="hidden" name="id" value="<?php echo $row['id']; ?>">
-														<button type="submit" name="delete_user" class="delete-btn">DELETE</button>
-													</form>
 
-												</td>
-											</tr>
-									<?php
-										}
-									} else {
-										echo "no result";
-									}
-									?>
+									<div class="inp">
+										<button type="submit" name="track">Track</button>
+									</div>
 
-								</tbody>
-							</table>
+							</form>
 						</div>
 					</div>
+
+
 				</div>
 			</div>
 		</div>

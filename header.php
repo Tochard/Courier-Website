@@ -11,6 +11,9 @@
     <!-- <link rel="stylesheet" type="text/css" href="file:///C:\xampp\htdocs\courier\assets\css/all.css"> -->
 
     <title>Delivery Company</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
 </head>
 
 <body>
@@ -27,17 +30,17 @@
                         <img src="./assets/img/logo.png" alt="logo">
                     </div>
                     <button class="bt">
-                    <div class="mobile-nav">
+                        <div class="mobile-nav">
                             <div class="line"></div>
                             <div class="line"></div>
                             <div class="line"></div>
-                        
-                    </div>
-                    <div class="mobile-nav2">
+
+                        </div>
+                        <div class="mobile-nav2">
                             <div class="line1"></div>
                             <div class="line2"></div>
-                        
-                    </div>
+
+                        </div>
                     </button>
 
 
@@ -55,39 +58,38 @@
                     </div>
                 </div>
 
-                
+
             </nav>
 
-        <div class="mobile-menu">
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="service.php">Service</a></li>
-                <li><a href="track.php">Track</a></li>
-                <li><a href="contact.php">Contact</a></li>
-                <li><a href="signup.php" style="color: #347fff;">Create An Account</a></li>
-                <li><a href="login.php" style="color: #D31807;">Sign In</a></li>
-            </ul>
-        </div>
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="service.php">Service</a></li>
+                    <li><a href="track.php">Track</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="signup.php" style="color: #347fff;">Create An Account</a></li>
+                    <li><a href="login.php" style="color: #D31807;">Sign In</a></li>
+                </ul>
+            </div>
 
         </div>
-        
+
 
         <script type="text/javascript">
-
             // console.log("good")
-           const mobile_menu =  document.querySelector(".mobile-menu"),
-                 menuBtn = document.querySelector(".bt"),
-                 mobile_nav = document.querySelector(".mobile-nav"),
-                 mobile_nav2 = document.querySelector(".mobile-nav2");
-                 
+            const mobile_menu = document.querySelector(".mobile-menu"),
+                menuBtn = document.querySelector(".bt"),
+                mobile_nav = document.querySelector(".mobile-nav"),
+                mobile_nav2 = document.querySelector(".mobile-nav2");
 
-            menuBtn.addEventListener('click' , ()=>{
-                if(mobile_menu.style.display === 'none'){
+
+            menuBtn.addEventListener('click', () => {
+                if (mobile_menu.style.display === 'none') {
                     mobile_menu.style.display = 'block';
                     mobile_nav.style.display = 'none';
                     mobile_nav2.style.display = 'block';
-                }else{
+                } else {
                     mobile_menu.style.display = 'none';
                     mobile_nav.style.display = 'block';
                     mobile_nav2.style.display = 'none';

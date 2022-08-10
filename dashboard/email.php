@@ -24,7 +24,7 @@ require_once "../phpscripts/adminsecurity.php";
 			<div class="navigation">
 				<ul>
 					<a href="admin.php">
-						<li class="active">Dashbord</li>
+						<li>Dashbord</li>
 					</a>
 					<a href="registershipment.php">
 						<li>Register Shipment</li>
@@ -36,7 +36,7 @@ require_once "../phpscripts/adminsecurity.php";
 						<li>Shipment History</li>
 					</a>
 					<a href="email.php">
-						<li>Email User</li>
+						<li class="active">Email User</li>
 					</a>
 					<a href="trackshipment.php">
 						<li>Track</li>
@@ -105,70 +105,46 @@ require_once "../phpscripts/adminsecurity.php";
 				})
 			</script>
 
-
 			<div class="body-content">
-
 
 				<div class="b-content">
 					<div class="b-heading">
-						<h2>Registered Users</h2>
+						<h2>Email Users</h2>
 
 					</div>
 
-					<div class="outer-wrapper">
-						<div class="table-wrapper">
-							<table>
-								<?php
-								include_once "../phpscripts/dbconn.php";
-								$query = "SELECT * FROM users ORDER BY id ASC";
-								$query_run = mysqli_query($conn, $query);
+					<div class="shipment">
 
-								?>
+						<div>
+							<form method="post" action="../phpscripts/mail.php" class="form">
 
-								<thead>
-									<tr>
-										<th>S.No</th>
-										<th>Name</th>
-										<th>Email</th>
-										<th>Phone</th>
-										<th>Country</th>
-										<th>Address</th>
-										<th>SignUp date</th>
-										<th>Action</th>
-									</tr>
-								</thead>
-								<tbody>
-									<?php
-									if (mysqli_num_rows($query_run) > 0) {
-										while ($row = mysqli_fetch_assoc($query_run)) {
-									?>
-											<tr>
-												<td data-label="S.No"><?php echo $row['id'] ?></td>
-												<td data-label="Fullname"><?php echo $row['fullname'] ?></td>
-												<td data-label="Email"><?php echo $row['email'] ?></td>
-												<td data-label="Phone"><?php echo $row['phone'] ?></td>
-												<td data-label="Country"><?php echo $row['country'] ?></td>
-												<td data-label="Address"><?php echo $row['address'] ?></td>
-												<td data-label="Signup Date"><?php echo $row['regdate'] ?></td>
-												<td data-label="Action">
-													<form action="../phpscripts/deleteuser.php" method="post">
-														<input type="hidden" name="id" value="<?php echo $row['id']; ?>">
-														<button type="submit" name="delete_user" class="delete-btn">DELETE</button>
-													</form>
+								<div>
+									<div class="inp">
+										<label>Name</label><br>
+										<input type="text" name="name" placeholder="Name" required="">
+									</div>
+									<div class="inp">
+										<label>Email Address:</label>
+										<input type="email" name="email" placeholder="Email Address" required="">
+									</div>
+									<div class="inp">
+										<label>Subject:</label>
+										<input type="text" name="subject" placeholder="Subject" required="">
+									</div>
+									<div class="inp">
+										<label>Message:</label>
+										<textarea name="message" placeholder="Message" required=""></textarea>
+									</div>
 
-												</td>
-											</tr>
-									<?php
-										}
-									} else {
-										echo "no result";
-									}
-									?>
+									<div class="inp">
+										<button type="submit" name="send">Send</button>
+									</div>
 
-								</tbody>
-							</table>
+							</form>
 						</div>
 					</div>
+
+
 				</div>
 			</div>
 		</div>

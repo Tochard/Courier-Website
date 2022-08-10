@@ -115,7 +115,8 @@ h1 {
     letter-spacing: -1.5px;
     line-height: 1.25;
 }
-small{
+
+small {
     font-size: 12px;
 }
 
@@ -129,7 +130,8 @@ body {
 }
 
 .header {
-    background-color: #fff;    border-bottom: 4px solid #00000099;
+    background-color: #fff;
+    border-bottom: 4px solid #00000099;
 
 }
 
@@ -185,20 +187,23 @@ body {
 .navs ul .login a {
     color: #00000099;
 }
-.active{
+
+.active {
     background-color: #347fff;
     border-radius: 5px;
 }
-ul .active a{
+
+ul .active a {
     color: #fff;
 }
 
 
-.bt{
+.bt {
     background-color: transparent;
     border: none;
     display: none;
 }
+
 .line {
     width: 30px;
     height: 5px;
@@ -206,19 +211,21 @@ ul .active a{
     background-color: #00000099;
 
 }
-.line2{
+
+.line2 {
     width: 30px;
     height: 5px;
     margin: 5px;
     background-color: #00000099;
-    transform: translateY(-5px) rotate(-225deg) ;
+    transform: translateY(-5px) rotate(-225deg);
 }
-.line1{
+
+.line1 {
     width: 30px;
     height: 5px;
     margin: 5px;
     background-color: #00000099;
-    transform: translateY(5px) rotate(225deg) ;
+    transform: translateY(5px) rotate(225deg);
 }
 
 label {
@@ -228,7 +235,7 @@ label {
     display: none;
 }
 
-.mobile-menu{
+.mobile-menu {
     padding: 20px 5%;
     height: 80vh;
     width: 100%;
@@ -239,20 +246,23 @@ label {
     /*animation: ;*/
     transition: opacity 0.5s, transform 0.5s;
 }
-.mobile-menu ul li{
+
+.mobile-menu ul li {
     padding: 10px 0;
 }
-.mobile-menu ul li a{
+
+.mobile-menu ul li a {
     color: #00000099;
     font-weight: bold;
 }
-.mobile-nav2{
+
+.mobile-nav2 {
     display: none;
 }
 
 
 
-.desc{
+.desc {
     height: 200px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url("../img/truck.jpg");
     background-repeat: no-repeat;
@@ -260,8 +270,9 @@ label {
     background-size: cover;
     padding: 70px 5%;
 }
-.desc h1{
-    color:  #fff;
+
+.desc h1 {
+    color: #fff;
     text-align: center;
 }
 
@@ -279,6 +290,7 @@ label {
     background-size: cover;
 
 }
+
 .st1 p {
     font-size: 1.25rem;
     font-weight: 400;
@@ -312,17 +324,20 @@ label {
     padding: 10px 20px;
     border-radius: 5px;
 }
-.btn1 a{
+
+.btn1 a {
     font-size: 13px;
     color: #fff;
 }
+
 .btn2 {
     margin-left: 20px;
     background-color: #D31807;
     padding: 10px 20px;
     border-radius: 5px;
 }
-.btn2 a{
+
+.btn2 a {
     font-size: 13px;
     color: #fff;
 }
@@ -331,23 +346,24 @@ label {
 
 
 
-.track{
+.track {
     background-color: #347fff;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 30px 5%;
 }
-.tracking form input{
+
+.tracking form input {
     font-style: 25px;
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
     outline: none;
-    width:  70%;
+    width: 70%;
 }
 
-.tracking form button{
-    
+.tracking form button {
+
     font-style: 25px;
     padding: 10px 20px;
     border-radius: 5px;
@@ -363,25 +379,26 @@ label {
 
 
 
-.abt{
+.abt {
     /*margin-top: 200px;*/
     background-color: #fff;
     padding: 50px 5%;
 
 }
 
-.about{
+.about {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 
 }
 
-.abt-us h2{
+.abt-us h2 {
     font-size: 1.8em;
     font-weight: bold;
-    color:#D31807;
+    color: #D31807;
 }
+
 .abt h4 {
     font-size: 1.4em;
     color: #347fff;
@@ -389,18 +406,20 @@ label {
     margin-bottom: 20px;
 }
 
-.abt-us p{
+.abt-us p {
     color: #00000099;
 }
-.abt-img{
+
+.abt-img {
     display: flex;
     justify-content: center;
     align-items: center;
     /*margin: auto;*/
 }
-.abt-img img{
+
+.abt-img img {
     width: 100%;
-    padding:20px 10% 0 10%;
+    padding: 20px 10% 0 10%;
 }
 
 
@@ -409,36 +428,42 @@ label {
 
 
 
-.sv{
+.sv {
     background-color: #f2f2f2;
     padding: 50px 8%;
     text-align: center;
-    
+
 }
-.sv h2{
+
+.sv h2 {
     font-size: 1.8em;
     color: #D31807;
     font-weight: bold;
 }
 
-.sv h3{
+.sv h3 {
     font-size: 1.1em;
     color: #347fff;
     font-weight: bold;
-    margin-bottom: 20px;;
+    margin-bottom: 20px;
+    ;
 }
-.sv h4{
+
+.sv h4 {
     font-size: 1.4em;
     color: #347fff;
     font-weight: bold;
-    margin-bottom: 20px;;
+    margin-bottom: 20px;
+    ;
 }
-.services{
+
+.services {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 50px;
 }
-.serv{
+
+.serv {
     background-color: #fff;
     border-radius: 20px 0px 20px 0px;
     padding: 20px;
@@ -451,11 +476,12 @@ label {
 
 
 
-.slide{
+.slide {
     padding: 25px 5%;
     background-color: #347fff;
 }
-.slide h2{
+
+.slide h2 {
     font-size: 2em;
     font-weight: bold;
     color: #fff;
@@ -468,7 +494,7 @@ label {
 
 
 
-.ct{
+.ct {
     /*background-color: #fff;*/
     background-image: linear-gradient(#2196f399, #1b1818), url(../img/truck.jpg);
     background-repeat: no-repeat;
@@ -476,7 +502,7 @@ label {
     background-size: cover;
 }
 
-.cont{
+.cont {
     /*width: 80%;*/
     /*padding: 0 5%;*/
     background: #fff;
@@ -484,7 +510,7 @@ label {
     padding: 50px 0px;
 }
 
-.contact input{
+.contact input {
     width: 80%;
     height: 40px;
     margin-top: 30px;
@@ -496,7 +522,7 @@ label {
     background-color: #f6f6f6;
 }
 
-.contact textarea{
+.contact textarea {
     width: 80%;
     height: 100px;
     margin-top: 30px;
@@ -508,7 +534,7 @@ label {
     background-color: #f6f6f6;
 }
 
-.contact button{
+.contact button {
     width: 84%;
     margin-top: 30px;
     padding: 15px;
@@ -526,38 +552,40 @@ label {
 
 
 
-footer{
+footer {
     padding: 50px 5% 30px 5%;
     background-color: #347fff;
 }
 
 
-.footnav{
+.footnav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
 }
-.footnav h3{
+
+.footnav h3 {
     color: #D31807;
     font-weight: bold;
     font-size: 1.3em;
     margin-bottom: 10px;
 }
 
-.footnav p{
+.footnav p {
     padding-left: 10px;
     color: #f2f2f2;
 }
 
-.footnav li{
+.footnav li {
     padding-left: 10px;
 }
-.fsect{
+
+.fsect {
     margin-bottom: 20px;
-    
+
 }
 
-.foot{
+.foot {
     text-align: center;
     background-color: #00000099;
     color: #fff;
@@ -569,28 +597,31 @@ footer{
 
 /*========================FAQ=========================*/
 
-.tr{
-    background-color: #fff;
+.tr {
+    background-color: #f2f2f2;
 }
 
-.trk{
-    background-color: #ddd;
+.trk {
+    background-color: #fff;
     box-shadow: rgba(149, 157, 165, 0.3) 0px 0px 10px;
 }
 
 
-.ree{
+.ree {
     margin: 0;
     padding: 0;
 }
-.reg{
+
+.reg {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.rt{
+
+.rt {
     padding: 50px 0%;
 }
-.re{
+
+.re {
     width: 100%;
     height: 100%;
     background-image: url(../img/truck.jpg);
@@ -599,8 +630,8 @@ footer{
     background-size: cover;
 }
 
-.cta{
-    padding-top: 20px ;
+.cta {
+    padding-top: 20px;
 }
 
 
@@ -610,96 +641,112 @@ footer{
 
 
 
-.wrapper{
-  max-width: 90%;
-  margin: auto;
-  padding: 25px 0px;
+.wrapper {
+    max-width: 90%;
+    margin: auto;
+    padding: 25px 0px;
 }
+
 .wrapper .parent-tab,
-.wrapper .child-tab{
-  margin-bottom: 8px;
-  border-radius: 3px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.18);
+.wrapper .child-tab {
+    margin-bottom: 8px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
 }
+
 .wrapper .parent-tab label,
-.wrapper .child-tab label{
-  background: #347fff;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  border-radius: 3px;
-  position: relative;
-  z-index: 99;
-  transition: all 0.3s ease;
+.wrapper .child-tab label {
+    background: #347fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    z-index: 99;
+    transition: all 0.3s ease;
 }
-.wrapper .parent-tab label:hover{
-  background: #006fe6;
+
+.wrapper .parent-tab label:hover {
+    background: #006fe6;
 }
-.parent-tab input:checked ~ label,
-.child-tab input:checked ~ label{
-  border-radius: 3px 3px 0 0;
-  background: #006fe6;
+
+.parent-tab input:checked~label,
+.child-tab input:checked~label {
+    border-radius: 3px 3px 0 0;
+    background: #006fe6;
 }
-.wrapper label span{
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  text-shadow: 0 -1px 1px #0056b3;
+
+.wrapper label span {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-shadow: 0 -1px 1px #0056b3;
 }
-.wrapper .child-tab label span{
-  font-size: 17px;
+
+.wrapper .child-tab label span {
+    font-size: 17px;
 }
-.parent-tab label .icon{
-  position: relative;
-  height: 30px;
-  width: 30px;
-  font-size: 15px;
-  color: #007bff;
-  display: block;
-  background: #fff;
-  border-radius: 50%;
-  text-shadow: 0 -1px 1px #0056b3;
+
+.parent-tab label .icon {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+    color: #007bff;
+    display: block;
+    background: #fff;
+    border-radius: 50%;
+    text-shadow: 0 -1px 1px #0056b3;
 }
-.wrapper .child-tab label .icon{
-  height: 27px;
-  width: 27px;
+
+.wrapper .child-tab label .icon {
+    height: 27px;
+    width: 27px;
 }
-.parent-tab label .icon i{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+.parent-tab label .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.parent-tab input:checked ~ label .icon i:before,
-.child-tab input:checked ~ label .icon i:before{
-  content: '\f068';
+
+.parent-tab input:checked~label .icon i:before,
+.child-tab input:checked~label .icon i:before {
+    content: '\f068';
 }
+
 .wrapper .parent-tab .content,
-.wrapper .child-tab .sub-content{
-  max-height: 0px;
-  overflow: hidden;
-  background: #fff;
-  border-radius: 0 0 3px 3px;
-  transition: all 0.4s ease;
+.wrapper .child-tab .sub-content {
+    max-height: 0px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 0 0 3px 3px;
+    transition: all 0.4s ease;
 }
-.parent-tab input:checked ~ .content,
-.child-tab input:checked ~ .sub-content{
-  max-height: 100vh;
+
+.parent-tab input:checked~.content,
+.child-tab input:checked~.sub-content {
+    max-height: 100vh;
 }
-.tab-3 input:checked ~ .content{
-  padding: 15px 20px;
+
+.tab-3 input:checked~.content {
+    padding: 15px 20px;
 }
+
 .parent-tab .content p,
-.child-tab .sub-content p{
-  padding: 15px 20px;
-  font-size: 16px;
+.child-tab .sub-content p {
+    padding: 15px 20px;
+    font-size: 16px;
 }
-.child-tab .sub-content p{
-  font-size: 15px;
+
+.child-tab .sub-content p {
+    font-size: 15px;
 }
+
 input[type="radio"],
-input[type="checkbox"]{
-  display: none;
+input[type="checkbox"] {
+    display: none;
 }

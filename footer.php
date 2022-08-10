@@ -10,11 +10,21 @@
                     <div class="fsect">
                         <h3>Quick Access</h3>
                         <ul>
-                            <li><a href="index.php"><p>Home</p></a></li>
-                            <li><a href="about.php"><p>About</p></a></li>
-                            <li><a href="service.php"><p>Service</p></a></li>
-                            <li><a href="track.php"><p>Track</p></a></li>
-                            <li><a href="contact.php"><p>Contact</p></a></li>
+                            <li><a href="index.php">
+                                    <p>Home</p>
+                                </a></li>
+                            <li><a href="about.php">
+                                    <p>About</p>
+                                </a></li>
+                            <li><a href="service.php">
+                                    <p>Service</p>
+                                </a></li>
+                            <li><a href="track.php">
+                                    <p>Track</p>
+                                </a></li>
+                            <li><a href="contact.php">
+                                    <p>Contact</p>
+                                </a></li>
                         </ul>
                     </div>
 
@@ -35,8 +45,8 @@
             </div>
         </section>
 
-    </div>
-    
-</body>
+        </div>
 
-</html>
+        </body>
+
+        </html>

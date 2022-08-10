@@ -10,5 +10,5 @@ $dbname = "Courier";
 $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
 if (!$conn) {
-	die('database connection failed' . mysqli_connect_error);
+	die('database connection failed' . mysqli_connect_error());
 }

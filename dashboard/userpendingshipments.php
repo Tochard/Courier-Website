@@ -1,5 +1,5 @@
 <?php
-require_once "../phpscripts/adminsecurity.php";
+require_once "../phpscripts/security.php";
 ?>
 
 
@@ -9,7 +9,7 @@ require_once "../phpscripts/adminsecurity.php";
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Admin Dashboard</title>
+	<title>User Dashboard</title>
 	<link rel="stylesheet" type="text/css" href="./css/adminstyle.css">
 </head>
 
@@ -23,27 +23,21 @@ require_once "../phpscripts/adminsecurity.php";
 			</div>
 			<div class="navigation">
 				<ul>
-					<a href="admin.php">
-						<li>Dashbord</li>
-					</a>
-					<a href="registershipment.php">
-						<li>Register Shipment</li>
-					</a>
-					<a href="shipments.php">
-						<li class="active">Pending Shipments</li>
-					</a>
-					<a href="shipmenthistory.php">
-						<li>Shipment History</li>
-					</a>
-					<a href="email.php">
-						<li>Email User</li>
-					</a>
-					<a href="trackshipment.php">
+					<a href="userdashboard.php">
 						<li>Track</li>
 					</a>
+					<a href="userpendingshipments.php">
+						<li class="active">Pending Shipments</li>
+					</a>
+					<a href="usershipmenthistory.php">
+						<li>Shipment History</li>
+					</a>
+					<a href="emailadmin.php">
+						<li>Email Admin</li>
+					</a>
 					<li class="logout">
-						<form action="../phpscripts/adminlogout.php" method="post">
-							<button type="submit" name="adminlogout">Logout</button>
+						<form action="../phpscripts/logout.php" method="post">
+							<button type="submit" name="logout">Logout</button>
 						</form>
 					</li>
 				</ul>
@@ -55,34 +49,28 @@ require_once "../phpscripts/adminsecurity.php";
 
 				<div><button class="menu"><i class="fa fa-bars"></i></button></div>
 				<div>
-					<h1>Admin Dashboard</h1>
+					<h1>user Dashboard</h1>
 				</div>
 
 			</div>
 
 			<div class="dropdown-list">
 				<ul>
-					<a href="admin.php">
-						<li>Dashbord</li>
+					<a href="userdashboard.php">
+						<li class="active">Track</li>
 					</a>
-					<a href="registershipment.php">
-						<li>Register Shipment</li>
-					</a>
-					<a href="shipments.php">
+					<a href="userpendingshipments.php">
 						<li>Pending Shipments</li>
 					</a>
-					<a href="shipmenthistory.php">
+					<a href="usershipmenthistory.php">
 						<li>Shipment History</li>
 					</a>
-					<a href="email.php">
-						<li>Email User</li>
-					</a>
-					<a href="trackshipment.php">
-						<li>Track</li>
+					<a href="emailadmin.php">
+						<li>Email Admin</li>
 					</a>
 					<li class="logout">
-						<form action="../phpscripts/adminlogout.php" method="post">
-							<button type="submit" name="adminlogout">Logout</button>
+						<form action="../phpscripts/logout.php" method="post">
+							<button type="submit" name="logout">Logout</button>
 						</form>
 					</li>
 				</ul>
@@ -116,7 +104,8 @@ require_once "../phpscripts/adminsecurity.php";
 							<table class="table">
 								<?php
 								include_once "../phpscripts/dbconn.php";
-								$query = "SELECT * FROM shipments WHERE parcelStatus != 'Delivered' ORDER BY id DESC";
+								$semail = $email;
+								$query = "SELECT * FROM shipments WHERE (parcelStatus != 'Delivered') AND (semail = '$semail') ORDER BY id DESC";
 								$query_run = mysqli_query($conn, $query);
 
 								?>
@@ -135,7 +124,6 @@ require_once "../phpscripts/adminsecurity.php";
 										<th>Address</th>
 										<th>Current Location</th>
 										<th>Status</th>
-										<th>Update</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -159,13 +147,6 @@ require_once "../phpscripts/adminsecurity.php";
 												<td data-label="Current Location"><?php echo $row['CurrentLocation'] ?></td>
 												<td data-label="Status">
 													<span class="status-btn"><?php echo $row['parcelStatus'] ?></span>
-
-												</td>
-												<td data-label="Status">
-													<form action="updateshipment.php" method="post">
-														<input type="hidden" name="t-id" value="<?php echo $row['trackingId'] ?>">
-														<button type="submit" name="update" class="update-btn">Update</button>
-													</form>
 
 												</td>
 											</tr>
